@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Awesome-Jobs Viet Nam</title>
+<div class=page>
+    <h1>Jobs from https://github.com/awesome-jobs/vietnam/issues</h1>
+</div>
+
+{% block body %}
+  <ul class=jobs>
+  {% for job in jobs %}
+    <li><h4>{{ job.job_title }}</h4><a href="{{ job.job_html_url }}">{{job.job_html_url}}</a>
+  {% endfor %}
+  </ul>
+{% endblock %}
